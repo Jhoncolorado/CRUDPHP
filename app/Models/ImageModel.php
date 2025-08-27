@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class ImageModel extends Model
+{
+    protected $table      = 'imagenes';
+    protected $primaryKey = 'id';
+
+    protected $allowedFields = ['filename', 'url', 'enlace', 'created_at'];
+    protected $useTimestamps = false;
+}
